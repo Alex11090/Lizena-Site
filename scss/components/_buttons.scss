@@ -1,0 +1,83 @@
+.btn {
+  display: inline-block;
+  font-family: $font-primary;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: $spacing-3 $spacing-6;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  border-radius: $border-radius;
+  transition: $transition-base;
+  cursor: pointer;
+  
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    
+    &:hover, &:focus {
+      background-color: $color-primary-dark;
+      color: $color-white;
+    }
+  }
+  
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+    
+    &:hover, &:focus {
+      background-color: $color-secondary-dark;
+      color: $color-white;
+    }
+  }
+  
+  &--light {
+    background-color: $color-white;
+    color: $color-primary;
+    
+    &:hover, &:focus {
+      background-color: $color-gray-100;
+      color: $color-primary-dark;
+    }
+  }
+  
+  &--outline-primary {
+    background-color: transparent;
+    border-color: $color-primary;
+    color: $color-primary;
+    
+    &:hover, &:focus {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+  
+  &--outline-light {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+    
+    &:hover, &:focus {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+  
+  &--full {
+    width: 100%;
+    display: block;
+  }
+  
+  &--lg {
+    padding: $spacing-4 $spacing-8;
+    font-size: $font-size-lg;
+  }
+  
+  &--sm {
+    padding: $spacing-2 $spacing-4;
+    font-size: $font-size-sm;
+  }
+}

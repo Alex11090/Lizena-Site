@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="/image/svg+xml" href="public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LIZENA Будівництво - Професійні будівельні послуги для житлових та комерційних проектів">
+  <title>LIZENA Будівництво - Будуємо Ваше Майбутнє</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="home-page">
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="/" class="logo">
+          <img src="public/images/logo.svg" alt="LIZENA Будівництво" class="logo__img">
+          <div class="logo__text-container">
+            <span class="logo__text">LIZENA</span>
+            <span class="logo__subtitle">Будівельна компанія</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/" class="nav__link nav__link--active">Головна</a></li>
+            <li class="nav__item"><a href="/about.html" class="nav__link">Про нас</a></li>
+            <li class="nav__item"><a href="/services.html" class="nav__link">Послуги</a></li>
+            <li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="/contact.html" class="nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <a href="tel:+380971872519" class="header__phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +380971872519
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Меню">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Будуємо досконалість <span>З 1995 року</span></h1>
+          <p class="hero__subtitle">Ми перетворюємо ваші будівельні мрії на реальність з точністю, якістю та
+            інноваціями.</p>
+          <div class="hero__buttons">
+            <a href="/contact.html" class="btn btn--primary">Отримати кошторис</a>
+            <a href="/services.html" class="btn btn--secondary">Наші послуги</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__overlay"></div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview section">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Наші послуги</h2>
+          <p class="section__subtitle">Комплексні будівельні рішення, адаптовані до ваших потреб</p>
+        </div>
+        <div class="services-grid">
+          <a href="/services/residential.html" class="service-card reveal fade-in-up-delay-1">
+            <div class="service-card__icon">
+              <img src="public/images/icons/residential.svg" alt="Житлове будівництво">
+            </div>
+            <h3 class="service-card__title">Житлове будівництво</h3>
+            <p class="service-card__description">Індивідуальні будинки, реконструкції та прибудови, спроектовані з
+              урахуванням вашого способу життя.</p>
+            <span class="service-card__link">Дізнатися більше</span>
+          </a>
+          <a href="/services/commercial.html" class="service-card reveal fade-in-up-delay-1">
+            <div class="service-card__icon">
+              <img src="public/images/icons/commercial.svg" alt="Комерційне будівництво">
+            </div>
+            <h3 class="service-card__title">Комерційне будівництво</h3>
+            <p class="service-card__description">Офісні будівлі, торгові площі та промислові об'єкти, побудовані за
+              найвищими стандартами.</p>
+            <span class="service-card__link">Дізнатися більше</span>
+          </a>
+          <a href="/services/renovation.html" class="service-card reveal fade-in-up-delay-2">
+            <div class="service-card__icon">
+              <img src="public/images/icons/renovation.svg" alt="Реконструкція">
+            </div>
+            <h3 class="service-card__title">Реконструкція</h3>
+            <p class="service-card__description">Перетворіть ваш існуючий простір за допомогою наших експертних послуг з
+              реконструкції та ремонту.</p>
+            <span class="service-card__link">Дізнатися більше</span>
+          </a>
+          <a href="/services/design.html" class="service-card reveal fade-in-up-delay-2">
+            <div class="service-card__icon">
+              <img src="public/images/icons/design.svg" alt="Проектування і планування">
+            </div>
+            <h3 class="service-card__title">Проектування і планування</h3>
+            <p class="service-card__description">Комплексні послуги з проектування для втілення вашого бачення від
+              концепції до завершення.</p>
+            <span class="service-card__link">Дізнатися більше</span>
+          </a>
+        </div>
+        <div class="section__footer reveal">
+          <a href="/services.html" class="btn btn--primary">Переглянути всі послуги</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase section section--gray">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Наше портфоліо</h2>
+          <p class="section__subtitle">Ознайомтеся з нашими останніми проектами та історіями успіху</p>
+        </div>
+        <div class="portfolio-slider reveal">
+          <div class="portfolio-slider__container">
+            <div class="portfolio-slider__item">
+              <img
+                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Сучасний офісний комплекс" class="portfolio-slider__image">
+              <div class="portfolio-slider__content">
+                <h3 class="portfolio-slider__title">Сучасний офісний комплекс</h3>
+                <p class="portfolio-slider__description">Сучасний офісний комплекс із екологічним дизайном та передовими
+                  технологіями.</p>
+              </div>
+            </div>
+            <div class="portfolio-slider__item">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Елітна резиденція" class="portfolio-slider__image">
+              <div class="portfolio-slider__content">
+                <h3 class="portfolio-slider__title">Елітна резиденція</h3>
+                <p class="portfolio-slider__description">Індивідуально спроектований елітний будинок з преміальним
+                  оздобленням та інтеграцією розумного дому.</p>
+              </div>
+            </div>
+            <div class="portfolio-slider__item">
+              <img
+                src="https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Торговий центр" class="portfolio-slider__image">
+              <div class="portfolio-slider__content">
+                <h3 class="portfolio-slider__title">Торговий центр</h3>
+                <p class="portfolio-slider__description">Багатофункціональний торговий центр, спроектований для
+                  максимальної видимості та потоку клієнтів.</p>
+              </div>
+            </div>
+          </div>
+          <button class="portfolio-slider__arrow portfolio-slider__arrow--prev" aria-label="Попередній слайд">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="portfolio-slider__arrow portfolio-slider__arrow--next" aria-label="Наступний слайд">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="section__footer reveal">
+          <a href="/portfolio.html" class="btn btn--primary">Переглянути всі проекти</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Company -->
+    <section class="about section">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content reveal-left">
+            <div class="section__header section__header--left">
+              <h2 class="section__title">Про LIZENA</h2>
+              <p class="section__subtitle">Будуємо довіру через якісне будівництво понад 25 років</p>
+            </div>
+            <p class="about__text">Компанія LIZENA Будівництво була заснована в 1995 році з метою надання виняткових
+              будівельних послуг, які перевершують очікування клієнтів. Наша команда досвідчених професіоналів прагне до
+              якості, інновацій та сталого розвитку в кожному проекті, який ми беремо.</p>
+            <p class="about__text">Ми пишаємося нашою увагою до деталей, прозорою комунікацією та здатністю виконувати
+              проекти вчасно та в межах бюджету. Наш підхід, орієнтований на клієнта, гарантує, що ваше бачення
+              залишається в центрі всього, що ми робимо.</p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number">25+</span>
+                <span class="stat__label">Років досвіду</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">500+</span>
+                <span class="stat__label">Завершених проектів</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">98%</span>
+                <span class="stat__label">Задоволених клієнтів</span>
+              </div>
+            </div>
+            <a href="/about.html" class="btn btn--primary">Дізнатися більше</a>
+          </div>
+          <div class="about__image reveal-right">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Команда LIZENA Будівництво" class="about__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section section--gray">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Відгуки клієнтів</h2>
+          <p class="section__subtitle">Що кажуть наші клієнти про співпрацю з нами</p>
+        </div>
+        <div class="testimonials-slider reveal">
+          <div class="testimonials-slider__container">
+            <div class="testimonial-card">
+              <div class="testimonial-card__content">
+                <p class="testimonial-card__text">"LIZENA Будівництво перевершила наші очікування у всьому. Їхня увага
+                  до деталей та прагнення до якості не має рівних. Ми не могли бути більш задоволені нашою новою офісною
+                  будівлею."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Іван Петренко">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Іван Петренко</h4>
+                    <p class="testimonial-card__position">Генеральний директор, Петренко Підприємства</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__content">
+                <p class="testimonial-card__text">"Співпраця з LIZENA під час реконструкції нашого будинку була
+                  безпроблемним досвідом. Їхня команда була професійною, чуйною і виконала саме те, що ми задумали."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Марія Коваленко">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Марія Коваленко</h4>
+                    <p class="testimonial-card__position">Власниця будинку</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__content">
+                <p class="testimonial-card__text">"Команда LIZENA Будівництво втілила наше бачення торгового простору з
+                  точністю та креативністю. Їхнє управління проектом було бездоганним, і вони завершили роботу за
+                  графіком."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Михайло Шевченко">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Михайло Шевченко</h4>
+                    <p class="testimonial-card__position">Директор, Міська Торгова Група</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-slider__dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Готові розпочати свій проект?</h2>
+          <p class="cta__text">Зв'яжіться з нами сьогодні для безкоштовної консультації та кошторису. Давайте разом
+            побудуємо щось дивовижне.</p>
+          <div class="cta__buttons">
+            <a href="/contact.html" class="btn btn--light">Зв'язатися</a>
+            <a href="/services.html" class="btn btn--outline-light">Дослідити послуги</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <a href="/" class="logo logo--footer">
+            <img src="/images/logo-white.svg" alt="LIZENA Будівництво" class="logo__img">
+            <div class="logo__text-container">
+              <span class="logo__text">LIZENA</span>
+              <span class="logo__subtitle">Будівельна компанія</span>
+            </div>
+          </a>
+          <p class="footer__description">Будуємо досконалість через якість, інновації та сталі будівельні практики.</p>
+          <div class="footer__social">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Швидкі посилання</h3>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Головна</a></li>
+            <li><a href="/about.html" class="footer__link">Про нас</a></li>
+            <li><a href="/services.html" class="footer__link">Послуги</a></li>
+            <li><a href="/portfolio.html" class="footer__link">Портфоліо</a></li>
+            <li><a href="/contact.html" class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Послуги</h3>
+          <ul class="footer__list">
+            <li><a href="/services/residential.html" class="footer__link">Житлове будівництво</a></li>
+            <li><a href="/services/commercial.html" class="footer__link">Комерційне будівництво</a></li>
+            <li><a href="/services/renovation.html" class="footer__link">Реконструкція</a></li>
+            <li><a href="/services/design.html" class="footer__link">Проектування і планування</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__heading">Контакти</h3>
+          <address class="footer__address">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg> вул. Будівельна 123, м. Київ, 10001</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg> <a href="tel:+380971872519">+380971872519</a></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg> <a href="mailto:info@lizena.com">info@lizena.com</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 LIZENA Будівництво. Всі права захищені.</p>
+        <div class="footer__legal">
+          <a href="/privacy.html" class="footer__legal-link">Політика конфіденційності</a>
+          <a href="/terms.html" class="footer__legal-link">Умови використання</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

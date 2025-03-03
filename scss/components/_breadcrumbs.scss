@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  &__link {
+    color: $color-white;
+    opacity: 0.8;
+    transition: $transition-base;
+    
+    &:hover {
+      opacity: 1;
+      color: $color-white;
+    }
+  }
+  
+  &__separator {
+    margin: 0 $spacing-2;
+    color: $color-white;
+    opacity: 0.6;
+  }
+  
+  &__current {
+    color: $color-white;
+    font-weight: $font-weight-medium;
+  }
+}

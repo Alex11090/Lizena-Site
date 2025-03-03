@@ -1,0 +1,45 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: $spacing-6;
+    
+    @media (max-width: $breakpoint-md - 1px) {
+      flex-direction: column;
+      gap: $spacing-4;
+    }
+  }
+  
+  &__link {
+    font-family: $font-primary;
+    font-weight: $font-weight-medium;
+    color: $color-white;
+    position: relative;
+    padding: $spacing-2 0;
+    transition: $transition-base;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $color-white;
+      transition: $transition-base;
+    }
+    
+    &:hover, &--active {
+      color: $color-white;
+      
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.header--scrolled .nav__link {
+  &:after {
+    background-color: $color-primary;
+  }
+}

@@ -1,0 +1,26 @@
+// Services page specific styles
+
+.service-item {
+  transition: $transition-base;
+  
+  &:hover {
+    .service-item__image img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.text-block {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  p {
+    font-size: $font-size-lg;
+    line-height: $line-height-relaxed;
+    color: $color-gray-700;
+    
+    &:not(:last-child) {
+      margin-bottom: $spacing-4;
+    }
+  }
+}

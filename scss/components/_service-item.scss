@@ -1,0 +1,84 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-12;
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-8;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  &--reverse {
+    @media (min-width: $breakpoint-md) {
+      & > .service-item__image {
+        order: 2;
+      }
+      
+      & > .service-item__content {
+        order: 1;
+      }
+    }
+  }
+  
+  &__image {
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-lg;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition-base;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  &__title {
+    font-size: $font-size-2xl;
+    margin-bottom: $spacing-4;
+    color: $color-gray-900;
+  }
+  
+  &__description {
+    font-size: $font-size-lg;
+    color: $color-gray-700;
+    margin-bottom: $spacing-6;
+    line-height: $line-height-relaxed;
+  }
+  
+  &__features {
+    list-style: none;
+    margin-bottom: $spacing-6;
+    
+    li {
+      position: relative;
+      padding-left: $spacing-6;
+      margin-bottom: $spacing-3;
+      color: $color-gray-800;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 16px;
+        height: 16px;
+        background-color: $color-primary-light;
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+    }
+  }
+}

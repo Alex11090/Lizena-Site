@@ -1,0 +1,33 @@
+.portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing-2;
+  margin-bottom: $spacing-8;
+  
+  &__btn {
+    background: none;
+    border: none;
+    padding: $spacing-2 $spacing-4;
+    font-family: $font-primary;
+    font-weight: $font-weight-medium;
+    color: $color-gray-700;
+    cursor: pointer;
+    transition: $transition-base;
+    border-radius: $border-radius;
+    
+    &:hover {
+      color: $color-primary;
+    }
+    
+    &--active {
+      background-color: $color-primary;
+      color: $color-white;
+      
+      &:hover {
+        color: $color-white;
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+  
+  &__img {
+    height: 40px;
+    width: auto;
+  }
+  
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__text {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    color: $color-white;
+    letter-spacing: 1px;
+    transition: $transition-base;
+  }
+  
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: $font-size-xs;
+    color: rgba($color-white, 0.9);
+    letter-spacing: 0.5px;
+    transition: $transition-base;
+  }
+  
+  &--footer {
+    .logo__text {
+      color: $color-white;
+    }
+    
+    .logo__subtitle {
+      color: rgba($color-white, 0.7);
+    }
+  }
+}

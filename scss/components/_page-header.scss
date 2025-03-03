@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: $spacing-20 0;
+  margin-top: 80px;
+  color: $color-white;
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.6));
+    z-index: 1;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  &__title {
+    font-size: $font-size-4xl;
+    margin-bottom: $spacing-4;
+    color: $color-white;
+  }
+}

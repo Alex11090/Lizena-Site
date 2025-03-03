@@ -1,0 +1,150 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: $spacing-4 0;
+  z-index: $z-index-50;
+  transition: all 0.4s ease;
+  
+  // Default header style for inner pages (semi-transparent green)
+  background-color: rgba($color-primary, 0.9);
+  
+  // Homepage specific header (transparent)
+  .home-page & {
+    background-color: transparent;
+  }
+  
+  &.header--scrolled {
+    padding: $spacing-2 0;
+    background-color: rgba($color-white, 0.98);
+    box-shadow: $shadow;
+    
+    .logo__text {
+      color: $color-primary;
+    }
+    
+    .logo__subtitle {
+      color: $color-gray-600;
+    }
+    
+    .nav__link {
+      color: $color-gray-800;
+      
+      &:hover, &--active {
+        color: $color-primary;
+      }
+    }
+    
+    .hamburger__line {
+      background-color: $color-gray-800;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__phone {
+    @media (max-width: $breakpoint-md - 1px) {
+      display: none;
+    }
+    
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      color: $color-white;
+      font-weight: $font-weight-medium;
+      transition: $transition-base;
+      
+      svg {
+        flex-shrink: 0;
+      }
+      
+      &:hover {
+        color: rgba($color-white, 0.8);
+      }
+      
+      .header--scrolled & {
+        color: $color-gray-800;
+        
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+    
+    &-mobile {
+      display: block;
+      margin-top: $spacing-4;
+      padding-top: $spacing-4;
+      border-top: 1px solid rgba($color-white, 0.1);
+      
+      .header--scrolled & {
+        border-top-color: rgba($color-gray-800, 0.1);
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        gap: $spacing-2;
+        color: $color-white;
+        font-weight: $font-weight-medium;
+        
+        .header--scrolled & {
+          color: $color-gray-800;
+        }
+        
+        svg {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: $breakpoint-md - 1px) {
+    .nav {
+      display: none;
+      
+      &.nav--active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $color-primary;
+        padding: $spacing-4;
+        box-shadow: $shadow-md;
+        
+        .header--scrolled & {
+          background-color: $color-white;
+        }
+        
+        .nav__link {
+          color: $color-white;
+          
+          .header--scrolled & {
+            color: $color-gray-800;
+          }
+          
+          &:hover, &--active {
+            color: rgba($color-white, 0.8);
+            
+            .header--scrolled & {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: $breakpoint-md) {
+    .hamburger {
+      display: none;
+    }
+  }
+}

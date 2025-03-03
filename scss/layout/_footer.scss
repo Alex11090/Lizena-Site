@@ -1,0 +1,117 @@
+.footer {
+  background-color: $color-secondary-dark;
+  color: $color-white;
+  padding: $spacing-16 0 $spacing-8;
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-8;
+    margin-bottom: $spacing-12;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+  
+  &__info {
+    margin-bottom: $spacing-6;
+    
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 0;
+    }
+  }
+  
+  &__description {
+    margin: $spacing-4 0 $spacing-6;
+    color: $color-gray-300;
+    font-size: $font-size-base;
+    max-width: 90%;
+  }
+  
+  &__social {
+    display: flex;
+    gap: $spacing-3;
+  }
+  
+  &__heading {
+    font-size: $font-size-lg;
+    color: $color-white;
+    margin-bottom: $spacing-6;
+    font-weight: $font-weight-semibold;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3;
+  }
+  
+  &__link {
+    color: $color-gray-300;
+    transition: $transition-base;
+    
+    &:hover {
+      color: $color-white;
+    }
+  }
+  
+  &__address {
+    font-style: normal;
+    
+    p {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      margin-bottom: $spacing-3;
+      color: $color-gray-300;
+      
+      svg {
+        color: $color-primary-light;
+      }
+      
+      a {
+        color: $color-gray-300;
+        transition: $transition-base;
+        
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+  
+  &__bottom {
+    padding-top: $spacing-6;
+    border-top: 1px solid rgba($color-white, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+    
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  &__copyright {
+    color: $color-gray-400;
+    font-size: $font-size-sm;
+  }
+  
+  &__legal {
+    display: flex;
+    gap: $spacing-4;
+  }
+  
+  &__legal-link {
+    color: $color-gray-400;
+    font-size: $font-size-sm;
+    transition: $transition-base;
+    
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
