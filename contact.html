@@ -1,280 +1,361 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LIZENA Будівництво - Зв'яжіться з нами для ваших будівельних потреб">
-    <title>Контакти - LIZENA Будівництво</title>
-    <link rel="stylesheet" href="/scss/main.scss">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LIZENA Будівництво - Зв'яжіться з нами для ваших будівельних потреб">
+  <title>Контакти - LIZENA Будівництво</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="/" class="logo">
+          <img src="/images/logo.svg" alt="LIZENA Будівництво" class="logo__img">
+          <div class="logo__text-container">
+            <span class="logo__text">LIZENA</span>
+            <span class="logo__subtitle">Будівельна компанія</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/" class="nav__link">Головна</a></li>
+            <li class="nav__item"><a href="/about.html" class="nav__link">Про нас</a></li>
+            <li class="nav__item"><a href="/services.html" class="nav__link">Послуги</a></li>
+            <li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="/contact.html" class="nav__link nav__link--active">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <a href="tel:+380971872519" class="header__phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +380971872519
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Меню">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
       <div class="container">
-        <div class="header__content">
-          <a href="/" class="logo">
-            <img src="/images/logo.svg" alt="LIZENA Будівництво" class="logo__img">
+        <h1 class="page-header__title">Контакти</h1>
+        <div class="breadcrumbs">
+          <a href="/" class="breadcrumbs__link">Головна</a>
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">Контакти</span>
+        </div>
+      </div>
+      <div class="page-header__overlay"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="section__header section__header--left">
+              <h2 class="section__title">Зв'яжіться з нами</h2>
+              <p class="section__subtitle">Ми тут, щоб відповісти на ваші запитання</p>
+            </div>
+            <p class="contact-info__text">Незалежно від того, чи готові ви розпочати проект, маєте запитання щодо наших
+              послуг або хочете обговорити потенційну співпрацю, ми готові допомогти. Зв'яжіться з нами, використовуючи
+              контактну інформацію нижче або заповніть форму, і наша команда швидко зв'яжеться з вами.</p>
+
+            <div class="contact-info__item fade-in-up-delay-1">
+              <div class="contact-info__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-info__content">
+                <h3 class="contact-info__title">Наше розташування</h3>
+                <address class="contact-info__address">
+                  вул. Будівельна 123,<br>
+                  м. Київ, 10001
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info__item fade-in-up-delay-1">
+              <div class="contact-info__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-info__content">
+                <h3 class="contact-info__title">Номер телефону</h3>
+                <p><a href="tel:+380971872519">+380971872519</a></p>
+                <p><a href="tel:+380509876543">(050) 987-6543</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item fade-in-up-delay-2">
+              <div class="contact-info__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info__content">
+                <h3 class="contact-info__title">Електронна пошта</h3>
+                <p><a href="mailto:info@lizena.com">info@lizena.com</a></p>
+                <p><a href="mailto:support@lizena.com">support@lizena.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item fade-in-up-delay-2">
+              <div class="contact-info__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info__content">
+                <h3 class="contact-info__title">Робочі години</h3>
+                <p>Понеділок - П'ятниця: 8:00 - 18:00</p>
+                <p>Субота: 9:00 - 14:00</p>
+                <p>Неділя: Вихідний</p>
+              </div>
+            </div>
+
+            <div class="contact-info__social fade-in-up-delay-3">
+              <h3 class="contact-info__social-title">Слідкуйте за нами</h3>
+              <div class="contact-info__social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form reveal-right">
+            <div class="form-container">
+              <h3 class="form-container__title">Надіслати повідомлення</h3>
+              <form id="contactForm" class="form">
+                <div class="form__group">
+                  <label for="name" class="form__label">Повне ім'я *</label>
+                  <input type="text" id="name" name="name" class="form__input" required>
+                  <span class="form__error" id="nameError"></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="email" class="form__label">Електронна пошта *</label>
+                  <input type="email" id="email" name="email" class="form__input" required>
+                  <span class="form__error" id="emailError"></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="phone" class="form__label">Номер телефону</label>
+                  <input type="tel" id="phone" name="phone" class="form__input">
+                </div>
+
+                <div class="form__group">
+                  <label for="subject" class="form__label">Тема *</label>
+                  <input type="text" id="subject" name="subject" class="form__input" required>
+                  <span class="form__error" id="subjectError"></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="service" class="form__label">Послуга, що цікавить</label>
+                  <select id="service" name="service" class="form__select">
+                    <option value="">Оберіть послугу</option>
+                    <option value="residential">Житлове будівництво</option>
+                    <option value="commercial">Комерційне будівництво</option>
+                    <option value="renovation">Реконструкція</option>
+                    <option value="design">Проектування і планування</option>
+                    <option value="other">Інше</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label for="message" class="form__label">Повідомлення *</label>
+                  <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                  <span class="form__error" id="messageError"></span>
+                </div>
+
+                <div class="form__group form__group--checkbox">
+                  <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
+                  <label for="privacy" class="form__checkbox-label">Я погоджуюсь з <a href="/privacy.html">Політикою
+                      конфіденційності</a> *</label>
+                  <span class="form__error" id="privacyError"></span>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">Надіслати повідомлення</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Наше розташування</h2>
+          <p class="section__subtitle">Відвідайте наш офіс</p>
+        </div>
+      </div>
+      <div class="map-container reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d-122.08401708437269!3d37.42199997982367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc96de8dc419%3A0x35159822e43f7d1d!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1620841757803!5m2!1sen!2sus"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <a href="/" class="logo logo--footer">
+            <img src="/images/logo-white.svg" alt="LIZENA Будівництво" class="logo__img">
             <div class="logo__text-container">
               <span class="logo__text">LIZENA</span>
               <span class="logo__subtitle">Будівельна компанія</span>
             </div>
           </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="/" class="nav__link">Головна</a></li>
-              <li class="nav__item"><a href="/about.html" class="nav__link">Про нас</a></li>
-              <li class="nav__item"><a href="/services.html" class="nav__link">Послуги</a></li>
-              <li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфоліо</a></li>
-              <li class="nav__item"><a href="/contact.html" class="nav__link nav__link--active">Контакти</a></li>
-            </ul>
-          </nav>
-          <div class="header__phone">
-            <a href="tel:+380971872519" class="header__phone-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              +380971872519
+          <p class="footer__description">Будуємо досконалість через якість, інновації та сталі будівельні практики.</p>
+          <div class="footer__social">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
             </a>
           </div>
-          <button class="hamburger" aria-label="Меню">
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-          </button>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Швидкі посилання</h3>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Головна</a></li>
+            <li><a href="/about.html" class="footer__link">Про нас</a></li>
+            <li><a href="/services.html" class="footer__link">Послуги</a></li>
+            <li><a href="/portfolio.html" class="footer__link">Портфоліо</a></li>
+            <li><a href="/contact.html" class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Послуги</h3>
+          <ul class="footer__list">
+            <li><a href="/services/residential.html" class="footer__link">Житлове будівництво</a></li>
+            <li><a href="/services/commercial.html" class="footer__link">Комерційне будівництво</a></li>
+            <li><a href="/services/renovation.html" class="footer__link">Реконструкція</a></li>
+            <li><a href="/services/design.html" class="footer__link">Проектування і планування</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__heading">Контакти</h3>
+          <address class="footer__address">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg> вул. Будівельна 123, м. Київ, 10001</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg> <a href="tel:+380971872519">+380971872519</a></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg> <a href="mailto:info@lizena.com">info@lizena.com</a></p>
+          </address>
         </div>
       </div>
-    </header>
-
-    <main>
-      <!-- Page Header -->
-      <section class="page-header">
-        <div class="container">
-          <h1 class="page-header__title">Контакти</h1>
-          <div class="breadcrumbs">
-            <a href="/" class="breadcrumbs__link">Головна</a>
-            <span class="breadcrumbs__separator">/</span>
-            <span class="breadcrumbs__current">Контакти</span>
-          </div>
-        </div>
-        <div class="page-header__overlay"></div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="section">
-        <div class="container">
-          <div class="contact-grid">
-            <div class="contact-info reveal-left">
-              <div class="section__header section__header--left">
-                <h2 class="section__title">Зв'яжіться з нами</h2>
-                <p class="section__subtitle">Ми тут, щоб відповісти на ваші запитання</p>
-              </div>
-              <p class="contact-info__text">Незалежно від того, чи готові ви розпочати проект, маєте запитання щодо наших послуг або хочете обговорити потенційну співпрацю, ми готові допомогти. Зв'яжіться з нами, використовуючи контактну інформацію нижче або заповніть форму, і наша команда швидко зв'яжеться з вами.</p>
-              
-              <div class="contact-info__item fade-in-up-delay-1">
-                <div class="contact-info__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                </div>
-                <div class="contact-info__content">
-                  <h3 class="contact-info__title">Наше розташування</h3>
-                  <address class="contact-info__address">
-                    вул. Будівельна 123,<br>
-                    м. Київ, 10001
-                  </address>
-                </div>
-              </div>
-              
-              <div class="contact-info__item fade-in-up-delay-1">
-                <div class="contact-info__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div class="contact-info__content">
-                  <h3 class="contact-info__title">Номер телефону</h3>
-                  <p><a href="tel:+380971872519">+380971872519</a></p>
-                  <p><a href="tel:+380509876543">(050) 987-6543</a></p>
-                </div>
-              </div>
-              
-              <div class="contact-info__item fade-in-up-delay-2">
-                <div class="contact-info__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div class="contact-info__content">
-                  <h3 class="contact-info__title">Електронна пошта</h3>
-                  <p><a href="mailto:info@lizena.com">info@lizena.com</a></p>
-                  <p><a href="mailto:support@lizena.com">support@lizena.com</a></p>
-                </div>
-              </div>
-              
-              <div class="contact-info__item fade-in-up-delay-2">
-                <div class="contact-info__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                </div>
-                <div class="contact-info__content">
-                  <h3 class="contact-info__title">Робочі години</h3>
-                  <p>Понеділок - П'ятниця: 8:00 - 18:00</p>
-                  <p>Субота: 9:00 - 14:00</p>
-                  <p>Неділя: Вихідний</p>
-                </div>
-              </div>
-              
-              <div class="contact-info__social fade-in-up-delay-3">
-                <h3 class="contact-info__social-title">Слідкуйте за нами</h3>
-                <div class="contact-info__social-icons">
-                  <a href="#" class="social-icon" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                  </a>
-                  <a href="#" class="social-icon" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                  </a>
-                  <a href="#" class="social-icon" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                  </a>
-                  <a href="#" class="social-icon" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="contact-form reveal-right">
-              <div class="form-container">
-                <h3 class="form-container__title">Надіслати повідомлення</h3>
-                <form id="contactForm" class="form">
-                  <div class="form__group">
-                    <label for="name" class="form__label">Повне ім'я *</label>
-                    <input type="text" id="name" name="name" class="form__input" required>
-                    <span class="form__error" id="nameError"></span>
-                  </div>
-                  
-                  <div class="form__group">
-                    <label for="email" class="form__label">Електронна пошта *</label>
-                    <input type="email" id="email" name="email" class="form__input" required>
-                    <span class="form__error" id="emailError"></span>
-                  </div>
-                  
-                  <div class="form__group">
-                    <label for="phone" class="form__label">Номер телефону</label>
-                    <input type="tel" id="phone" name="phone" class="form__input">
-                  </div>
-                  
-                  <div class="form__group">
-                    <label for="subject" class="form__label">Тема *</label>
-                    <input type="text" id="subject" name="subject" class="form__input" required>
-                    <span class="form__error" id="subjectError"></span>
-                  </div>
-                  
-                  <div class="form__group">
-                    <label for="service" class="form__label">Послуга, що цікавить</label>
-                    <select id="service" name="service" class="form__select">
-                      <option value="">Оберіть послугу</option>
-                      <option value="residential">Житлове будівництво</option>
-                      <option value="commercial">Комерційне будівництво</option>
-                      <option value="renovation">Реконструкція</option>
-                      <option value="design">Проектування і планування</option>
-                      <option value="other">Інше</option>
-                    </select>
-                  </div>
-                  
-                  <div class="form__group">
-                    <label for="message" class="form__label">Повідомлення *</label>
-                    <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
-                    <span class="form__error" id="messageError"></span>
-                  </div>
-                  
-                  <div class="form__group form__group--checkbox">
-                    <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
-                    <label for="privacy" class="form__checkbox-label">Я погоджуюсь з <a href="/privacy.html">Політикою конфіденційності</a> *</label>
-                    <span class="form__error" id="privacyError"></span>
-                  </div>
-                  
-                  <button type="submit" class="btn btn--primary btn--full">Надіслати повідомлення</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Map Section -->
-      <section class="map-section">
-        <div class="container">
-          <div class="section__header reveal">
-            <h2 class="section__title">Наше розташування</h2>
-            <p class="section__subtitle">Відвідайте наш офіс</p>
-          </div>
-        </div>
-        <div class="map-container reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d-122.08401708437269!3d37.42199997982367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc96de8dc419%3A0x35159822e43f7d1d!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1620841757803!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__grid">
-          <div class="footer__info">
-            <a href="/" class="logo logo--footer">
-              <img src="/images/logo-white.svg" alt="LIZENA Будівництво" class="logo__img">
-              <div class="logo__text-container">
-                <span class="logo__text">LIZENA</span>
-                <span class="logo__subtitle">Будівельна компанія</span>
-              </div>
-            </a>
-            <p class="footer__description">Будуємо досконалість через якість, інновації та сталі будівельні практики.</p>
-            <div class="footer__social">
-              <a href="#" class="social-icon" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Twitter">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </a>
-            </div>
-          </div>
-          <div class="footer__links">
-            <h3 class="footer__heading">Швидкі посилання</h3>
-            <ul class="footer__list">
-              <li><a href="/" class="footer__link">Головна</a></li>
-              <li><a href="/about.html" class="footer__link">Про нас</a></li>
-              <li><a href="/services.html" class="footer__link">Послуги</a></li>
-              <li><a href="/portfolio.html" class="footer__link">Портфоліо</a></li>
-              <li><a href="/contact.html" class="footer__link">Контакти</a></li>
-            </ul>
-          </div>
-          <div class="footer__links">
-            <h3 class="footer__heading">Послуги</h3>
-            <ul class="footer__list">
-              <li><a href="/services/residential.html" class="footer__link">Житлове будівництво</a></li>
-              <li><a href="/services/commercial.html" class="footer__link">Комерційне будівництво</a></li>
-              <li><a href="/services/renovation.html" class="footer__link">Реконструкція</a></li>
-              <li><a href="/services/design.html" class="footer__link">Проектування і планування</a></li>
-            </ul>
-          </div>
-          <div class="footer__contact">
-            <h3 class="footer__heading">Контакти</h3>
-            <address class="footer__address">
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> вул. Будівельна 123, м. Київ, 10001</p>
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <a href="tel:+380971872519">+380971872519</a></p>
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> <a href="mailto:info@lizena.com">info@lizena.com</a></p>
-            </address>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">&copy; 2025 LIZENA Будівництво. Всі права захищені.</p>
-          <div class="footer__legal">
-            <a href="/privacy.html" class="footer__legal-link">Політика конфіденційності</a>
-            <a href="/terms.html" class="footer__legal-link">Умови використання</a>
-          </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 LIZENA Будівництво. Всі права захищені.</p>
+        <div class="footer__legal">
+          <a href="/privacy.html" class="footer__legal-link">Політика конфіденційності</a>
+          <a href="/terms.html" class="footer__legal-link">Умови використання</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script type="module" src="/js/main.js"></script>
-  </body>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
 </html>
