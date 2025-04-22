@@ -189,8 +189,8 @@
     max-width: 450px;
     color: white;
     padding: 2rem 1rem;
-    margin: 0 auto;
-    text-align: center;
+    // margin: 0 auto;
+    text-align: start;
 
     @media (min-width: 768px) {
       text-align: left;

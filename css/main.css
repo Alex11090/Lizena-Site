@@ -1784,8 +1784,7 @@ small {
   max-width: 450px;
   color: white;
   padding: 2rem 1rem;
-  margin: 0 auto;
-  text-align: center;
+  text-align: start;
 }
 @media (min-width: 768px) {
   .hero__head-p {
