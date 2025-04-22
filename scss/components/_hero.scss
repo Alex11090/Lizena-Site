@@ -191,6 +191,7 @@
     padding: 2rem 1rem;
     // margin: 0 auto;
     text-align: start;
+    // margin-top: 22px;
 
     @media (min-width: 768px) {
       text-align: left;
@@ -207,6 +208,7 @@
         font-size: clamp(29px, 6vw, 60px);
         line-height: 1.1;
         display: block;
+        margin-bottom: 9px;
       }
 
       .headline-sub {

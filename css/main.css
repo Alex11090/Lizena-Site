@@ -1802,6 +1802,7 @@ small {
   font-size: clamp(29px, 6vw, 60px);
   line-height: 1.1;
   display: block;
+  margin-bottom: 9px;
 }
 .hero__head-p h1 .headline-sub {
   font-weight: 400;
