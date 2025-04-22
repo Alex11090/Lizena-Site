@@ -1,3 +1,145 @@
+// .hero {
+//   position: relative;
+//   height: 100vh;
+//   min-height: 600px;
+//   max-height: 800px;
+//   display: flex;
+//   align-items: center;
+//   background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+//   background-size: cover;
+//   background-position: center;
+//   margin-top: 0;
+
+//   &__overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.4));
+//     z-index: 1;
+//   }
+
+//   .container {
+//     position: relative;
+//     z-index: 2;
+//   }
+
+//   &__content {
+//     max-width: 650px;
+//     color: $color-white;
+//     opacity: 0;
+//     transform: translateY(30px);
+//     animation: fadeInUp 1s ease forwards;
+//     animation-delay: 0.5s;
+//   }
+//   &__head-p {
+//     max-width: 400px; /* або підбери вручну по макету */
+//     margin-left: 100px; /* вирівнювання зліва */
+//     color: white;
+//     // max-width: 900px;
+//     margin: 0 auto;
+//     padding: 3rem 1rem;
+//     text-align: center;
+//     // color: white;
+
+//     h1 {
+//       color: white;
+//       margin-bottom: 1rem;
+
+//       .headline-main {
+//         font-weight: 700;
+//         font-size: clamp(36px, 6vw, 72px);
+//         line-height: 1.1;
+//         display: block;
+//       }
+
+//       .headline-sub {
+//         font-weight: 400;
+//         font-size: clamp(22px, 4vw, 36px);
+//         line-height: 1.2;
+//         display: block;
+
+//         small {
+//           font-size: 0.8em;
+//           opacity: 0.8;
+//         }
+//       }
+//     }
+
+//     hr {
+//       width: 80px;
+//       border: none;
+//       border-top: 2px solid rgba(255, 255, 255, 0.3);
+//       margin: 1.5rem auto;
+//     }
+
+//     p {
+//       margin: 0.5rem 0;
+//       font-size: clamp(16px, 2.5vw, 22px);
+//       line-height: 1.6;
+
+//       span {
+//         font-size: inherit;
+
+//         b {
+//           font-size: clamp(26px, 5vw, 46px);
+//           font-weight: 700;
+//         }
+//       }
+
+//       s {
+//         font-size: clamp(16px, 3vw, 20px);
+//         opacity: 0.6;
+//         margin-left: 8px;
+//       }
+//     }
+//   }
+
+//   // &__title {
+//   //   font-size: $font-size-4xl;
+//   //   // font-size: 24px;
+//   //   margin-bottom: $spacing-4;
+//   //   color: $color-white;
+
+//   //   @media (min-width: $breakpoint-md) {
+//   //     font-size: $font-size-5xl;
+//   //   }
+
+//   //   span {
+//   //     display: block;
+//   //     color: $color-primary-light;
+//   //   }
+//   // }
+
+//   &__subtitle {
+//     font-size: $font-size-lg;
+//     margin-bottom: $spacing-8;
+//     line-height: $line-height-relaxed;
+
+//     @media (min-width: $breakpoint-md) {
+//       font-size: $font-size-xl;
+//     }
+//   }
+
+//   &__buttons {
+//     display: flex;
+//     gap: $spacing-4;
+//     flex-wrap: wrap;
+//   }
+// }
+
+// @keyframes fadeInUp {
+//   from {
+//     opacity: 0;
+//     transform: translateY(30px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
 .hero {
   position: relative;
   height: 100vh;
@@ -5,11 +147,10 @@
   max-height: 800px;
   display: flex;
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
-  margin-top: 0;
-  
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -19,50 +160,113 @@
     background: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.4));
     z-index: 1;
   }
-  
+
   .container {
     position: relative;
     z-index: 2;
   }
-  
+
   &__content {
-    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
     color: $color-white;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.5s;
-  }
-  
-  &__title {
-    font-size: $font-size-4xl;
-    margin-bottom: $spacing-4;
-    color: $color-white;
-    
-    @media (min-width: $breakpoint-md) {
-      font-size: $font-size-5xl;
-    }
-    
-    span {
-      display: block;
-      color: $color-primary-light;
+
+    @media (min-width: 768px) {
+      // flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
     }
   }
-  
-  &__subtitle {
-    font-size: $font-size-lg;
-    margin-bottom: $spacing-8;
-    line-height: $line-height-relaxed;
-    
-    @media (min-width: $breakpoint-md) {
-      font-size: $font-size-xl;
+
+  &__head-p {
+    max-width: 450px;
+    color: white;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 1rem;
+
+      .headline-main {
+        font-weight: 500;
+        font-size: clamp(29px, 6vw, 60px);
+        line-height: 1.1;
+        display: block;
+      }
+
+      .headline-sub {
+        font-weight: 400;
+        font-size: clamp(22px, 4vw, 30px);
+        line-height: 1.2;
+        display: block;
+
+        small {
+          font-size: 0.8em;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    hr {
+      width: 80px;
+      border: none;
+      border-top: 2px solid rgba(255, 255, 255, 0.3);
+      margin: 0 auto;
+
+      @media (min-width: 768px) {
+        margin: 1.5rem 0;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: clamp(16px, 2.5vw, 17px);
+      line-height: 1.6;
+      .vid {
+        font-size: clamp(22px, 4vw, 30px);
+      }
+      span {
+        font-size: inherit;
+
+        b {
+          font-size: clamp(26px, 5vw, 46px);
+          font-weight: 700;
+        }
+      }
+
+      s {
+        font-size: clamp(16px, 3vw, 20px);
+        opacity: 0.6;
+        margin-left: 8px;
+      }
     }
   }
-  
+
   &__buttons {
     display: flex;
-    gap: $spacing-4;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 }
 
